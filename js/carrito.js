@@ -14,6 +14,7 @@ btnFinalizarCompra[0].onclick = () => {
         alert('No añadiste ningún producto a tu carrito!')
     }else{
         alert('El total de tu compra es: ' + total + '. Muchas gracias por confiar en nosotros!')
+        location.reload()
     }
 }
 
