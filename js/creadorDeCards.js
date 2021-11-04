@@ -9,7 +9,7 @@ function cargoProductos() {
             for (const producto of productos) {
                 if(producto.talle == "numeroCalzado"){
                     contenedorProductos.append(`<div class="col-12 col-md-5 tarjeta">
-                    <img class="imagenProducto id="imagenProducto"" ${producto.imagen} alt="">
+                    <img class="imagenProducto id="imagenProducto"" ${producto.img} alt="">
                     <span class="textoTarjeta col-6">
                     <h3> ${producto.nombre}</h3>
                     <b> $ ${producto.precio}</b>
