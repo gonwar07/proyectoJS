@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Tienda de Ropa</title>
+
+    <script defer src="js/variablesGlobales.js"></script>
+    <script defer src="js/creadorDeCards.js"></script>
+    <script defer src="js/eventoMenu.js"></script>
+    <script defer src="js/agregarProducto.js"></script>
+    <script defer src="js/animaciones.js"></script>
+    <script defer src="js/carrito.js"></script>
+    <script defer src="js/totalCompra.js"></script>
+
+</head>
+<body>
+    <header class="head">
+        <div class="contenedorMenu mostrar">
+            <button class="btnMenu"><i class="fas fa-arrow-alt-circle-right"></i></button>
+            <nav class="menuNuevo">
+                <a href="#">Inicio</a>
+                <a href="#productos" class="button">Productos</a>
+                <a href="#sucursales" class="button">Sucursales</a>
+                <a href="#contacto" class="button">Contacto</a>
+            </nav>
+        </div>
+        <img src="img/header.png" alt="">
+    </header>
+    <main class="main container-fluid">
+        <div class="row cuadrosTexto">
+            <div class="divUno col-6">
+                <a name="sucursales" id="sucursales"></a>
+                <h3>SUCURSALES</h3>
+                <div>
+                    <p>CABA</p>
+                    <p>Av. Corrientes 1465</p>
+                </div>
+                <div>
+                    <p>MORÓN</p>
+                    <p>Alt. Brown 2804</p>
+                </div>
+            </div>
+            <div class="divDos col-6">
+                <a name="contacto" id="contacto"></a>
+                <h3>CONTACTANOS!</h3>
+                <form class='formulario_contacto' name='formulario_contacto'>
+                    <div>
+                        <div class="input-group position-relative">
+                            <label for="nombre" class="label">Nombre y apellido</label>
+                            <input class="text-dark w-100" type="text" id="nombre" name='nombre'>
+                        </div>
+                        <div class="input-group">
+                            <label for="email" class="label">Correo electrónico</label>
+                            <input class="text-dark w-100" type="email" id="email" name='email'>
+                        </div>
+                        <div class="input-group">
+                            <label for="mensaje" class="label">Dejanos tu mensaje!</label>
+                            <textarea class="text-dark w-100" name="mensaje" id="mensaje"></textarea>
+                        </div>
+                        <input class="text-dark d-block"id="enviar" type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <a name="productos" id="productos"></a>
+        <div class="row" id="tarjetasProductos"></div>
+        <button id="carrito"><i class="fas fa-shopping-cart"></i></button>
+        <!-- <button id="btnFinalizarCompra">FINALIZAR COMPRA</button> -->
+        <div class="divCarrito">
+            <ul id="prod">
+                <li id="titulo">PRODUCTO</li>
+            </ul>
+            <ul id="talle">
+                <li id="titulo">TALLE</li>
+            </ul>
+            <ul id="valor">
+                <li id="titulo">VALOR</li>
+            </ul>
+            <ul id="total">
+                <li id="titulo">TOTAL</li>
+            </ul>
+            <hr>
+            <div id="totalCompra">
+                <button id="btnTotalCompra">Calcular Total</button>
+                <p id="resultadoCompra">0</p>
+            </div>
+            <div class="botonesCarrito">
+                <button id="finalizarCompra">Finalizar Compra</button>
+                <button id="cerrar">Cerrar</button>  
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </nav>
+        <p>Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

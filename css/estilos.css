@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: auto;
+}
+.contenedorMenu{
+    display: flex;
+    flex-flow: column nowrap;
+    position: fixed;
+    width: 30vw;
+    height: 100vh;
+    background-color: #000000e6;
+    position: fixed;
+}
+.mostrar{
+    left: -40vw;
+}
+.menuNuevo{
+    display: flex;
+    flex-flow: column nowrap;
+    height: 60vh;
+    padding-left: 5vw;
+    justify-content: space-evenly;
+    margin-top: 20vh;
+}
+.menuNuevo a{
+    text-decoration: none;
+    color: #c4c4c4;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.menuNuevo a:hover{
+    color: #b52a2a;
+}
+.btnMenu{
+    height: 10vh;
+    width: 5vw;
+    background-color: transparent;
+    border: none;
+    text-align: end;
+    padding-top: 2vw;
+    padding-right: 2vw;
+    position: fixed;
+    left: 1vw;
+}
+.btnMenu i{
+    font-size: 3.7rem;
+    color: #b52a2a;
+    position: fixed;
+}
+.btnMenu i:hover{
+    color: #c4c4c4;
+}
+
+.head img{
+    width: 100%;
+    margin-top: -7vh;
+}
+
+/*MAIN*/
+.main{
+    height: 100%;
+    text-align: center;
+}
+.cuadrosTexto{
+    height:40vw;
+}
+.divUno, .divDos{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+.divUno{
+    grid-area: texto1;
+    background-color: black;
+    color: #ffffffc4;
+    display: flex;
+    flex-direction: column;
+}
+.divUno h3, .divDos h3{
+    font-weight: bold;
+}
+.divDos{
+    grid-area: texto2;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.divUno p, .divDos p{
+    font-size: 2vw;
+}
+.formulario li{
+    list-style: none;
+}
+#enviar{
+    width: 15vw;
+    margin-top: 3vw;
+}
+#tarjetasProductos{
+    grid-area: tarjeta;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000000eb;
+}
+.tarjeta{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    box-shadow: 0px 0px 20px black;
+    margin: 3vw;
+    background-image: radial-gradient(#6c6c6c,#151515);
+    padding: 40px;
+    color: white;
+}
+.tarjeta img{
+    width: 40%;
+}
+.textoTarjeta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textoTarjeta h3{
+    font-weight: bold;
+}
+.textoTarjeta button{
+    width: 22%;
+    margin-top: 6vw;
+}
+.form-select{
+    width: 62%;
+}
+#carrito{
+    position: fixed;
+    z-index: 5;
+    top: 85vh;
+    left: 88vw;
+    width: 7vw;
+    height: 13vh;
+    border-radius: 100%;
+    box-shadow: 5px 6px 10px black;
+}
+#carrito i{
+    font-size: 1.4rem;
+}
+.divCarrito{
+    position: fixed;
+    display: none;
+    grid-template-areas: "prod talle valor total"
+                         "hr hr hr hr"
+                         "totalCompra totalCompra totalCompra totalCompra"
+                         "btn btn btn btn";
+    justify-content: space-evenly;
+    top: 18vh;
+    left: 23vw;
+    width: 50vw;
+    height: auto;
+    min-height: 50vh;
+    padding-bottom: 10vh;
+    background-color: #000000f0;
+    color: white;
+}
+.divCarrito ul{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 2vw;
+}
+.divCarrito #prod{
+    grid-area: prod;
+}
+.divCarrito #talle{
+    grid-area: talle;
+}
+.divCarrito #valor{
+    grid-area: valor;
+}
+.divCarrito #total{
+    grid-area: total;
+}
+.divCarrito hr{
+    grid-area: hr;
+}
+.divCarrito #totalCompra{
+    grid-area: totalCompra;
+    width: auto;
+    text-align: end;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.divCarrito .botonesCarrito{
+    grid-area: btn;
+    margin-top: 9vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.divCarrito .botonesCarrito button, #totalcompra button{
+    height: 7vh;
+    min-width: 14vw;
+}
+.divCarrito #titulo{
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+
+/*FOOTER*/
+footer{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 40vh;
+    background-color: #141414;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 8vh;
+}
+footer nav a{
+    color: #b52a2a;
+    font-size: 1.3rem;
+}
+footer nav a:hover{
+    color: #959595;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 500px) {
+    .cuadrosTexto{
+        height: 50vh;
+    }
+    .divUno p, .divDos p, .label{
+        font-size: 0.8rem;
+    }
+    #carrito{
+        left: 82vw;
+        width: 17vw;
+        height: 6vh;
+    }
+    .menuNuevo{
+        height: 30vh;
+        margin-top: 17vh;
+    }
+    .contenedorMenu{
+        width: 50vw;
+    }
+    .mostrar{
+        left: -50vw;
+    }
+    .form-select{
+        width: 95%;
+    }
+    .divCarrito{
+        left: 0vw;
+        width: 100vw;
+    }
+    .divCarrito .botonesCarrito button, #btnTotalCompra{
+        height: 4vh;
+        font-size: 0.8rem;
+        width: 30vw;
+    }
+}
+@media screen and (min-width:501px) and (max-width: 850px) {
+    .btnMenu i{
+        font-size: 2.7rem;
+    }
+    #carrito{
+        left: 84vw;
+        width: 14vw;
+        height: 6vh;
+    }
+    .tarjeta img {
+        width: 35%;
+    }
+    .cuadrosTexto {
+        height: 60vw;
+    }
+    .menuNuevo{
+        height: 30vh;
+        margin-top: 17vh;
+    }
+    .contenedorMenu{
+        width: 50vw;
+    }
+    .mostrar{
+        left: -50vw;
+    }
+    .form-select{
+        width: 95%;
+    }
+    .divCarrito{
+        left: 0vw;
+        width: 100vw;
+    }
+    .divCarrito .botonesCarrito button, #btnTotalCompra{
+        height: 4vh;
+        font-size: 0.8rem;
+        width: 30vw;
+    }
+
+}
+@media screen and (min-width: 1400px) {
+    #carrito{
+        width: 7vw;
+        height: 16vh;
+    }
+
+}

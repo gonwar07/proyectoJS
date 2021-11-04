@@ -1,0 +1,58 @@
+[
+    {
+        "prod_id": 1,
+        "nombre": "Zapatos",
+        "precio": "12000",
+        "imagen": "src='../img/zapatos.png'",
+        "descripcion": "Zapatos de vestir color suela.",
+        "talle": "numeroCalzado"
+    },
+    {
+        "prod_id": 2,
+        "nombre": "Remera",
+        "precio": "2000",
+        "imagen": "src='../img/remera.png'",
+        "descripcion": "Remera Paris color blanca.",
+        "talle": "letra"
+    },
+    {
+        "prod_id": 3,
+        "nombre": "Campera",
+        "precio": "8500",
+        "imagen": "src='../img/campera.png'",
+        "descripcion": "Campera de cuero ecológico negro con capucha de algodón.",
+        "talle": "letra"
+    },
+    {
+        "prod_id": 4,
+        "nombre": "Pantalón",
+        "precio": "7800",
+        "imagen": "src='../img/pantalon.png'",
+        "descripcion": "Pantalón de vestir color negro.",
+        "talle": "numeroPantalon"
+    },
+    {
+        "prod_id": 5,
+        "nombre": "Mochila",
+        "precio": "6400",
+        "imagen": "src='../img/mochila.png'",
+        "descripcion": "Mochila de cuero ecológico color negro.",
+        "talle": "unico"
+    },
+    {
+        "prod_id": 6,
+        "nombre": "Cinturón",
+        "precio": "2000",
+        "imagen": "src='../img/cinturon.png'",
+        "descripcion": "Cinturón negro con tachas.",
+        "talle": "letra"
+    },
+    {
+        "prod_id": 7,
+        "nombre": "Buzo",
+        "precio": "4200",
+        "imagen": "src='../img/buzo.png'",
+        "descripcion": "Pantalón de vestir color negro",
+        "talle": "letra"
+    }
+]
