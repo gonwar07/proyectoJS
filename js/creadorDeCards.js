@@ -26,7 +26,7 @@ function cargoProductos() {
                     </div>`)
                 }else if(producto.talle == "letra"){
                     contenedorProductos.append(`<div class="col-12 col-md-5 tarjeta">
-                    <img class="imagenProducto id="imagenProducto"" ${producto.imagen} alt="">
+                    <img class="imagenProducto id="imagenProducto"" ${producto.img} alt="">
                     <span class="textoTarjeta col-6">
                     <h3> ${producto.nombre}</h3>
                     <b> $ ${producto.precio}</b>
@@ -43,7 +43,7 @@ function cargoProductos() {
                     </div>`)
                 }else if(producto.talle == "numeroPantalon"){
                     contenedorProductos.append(`<div class="col-12 col-md-5 tarjeta">
-                    <img class="imagenProducto id="imagenProducto"" ${producto.imagen} alt="">
+                    <img class="imagenProducto id="imagenProducto"" ${producto.img} alt="">
                     <span class="textoTarjeta col-6">
                     <h3> ${producto.nombre}</h3>
                     <b> $ ${producto.precio}</b>
@@ -60,7 +60,7 @@ function cargoProductos() {
                     </div>`)
                 }else{
                     contenedorProductos.append(`<div class="col-12 col-md-5 tarjeta">
-                    <img class="imagenProducto id="imagenProducto"" ${producto.imagen} alt="">
+                    <img class="imagenProducto id="imagenProducto"" ${producto.img} alt="">
                     <span class="textoTarjeta col-6">
                     <h3> ${producto.nombre}</h3>
                     <b> $ ${producto.precio}</b>
